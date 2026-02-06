@@ -1,21 +1,20 @@
 # MyApp
 
-**TODO: Add description**
+Run with `iex -S mix` and observe the warnings:
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `my_app` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:my_app, "~> 0.1.0"}
-  ]
-end
 ```
+      warning: function Elixir.GeoSQL.PostGIS.Extension.Box2D/4 is unused
+      │
+ 1084 │     Module.create(module, quoted, Macro.Env.location(__ENV__))
+      │     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      │
+      └─ deps/postgrex/lib/postgrex/type_module.ex:1084: MyApp.PostgrexTypes (module)
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/my_app>.
+      warning: function Elixir.GeoSQL.PostGIS.Extension/4 is unused
+      │
+ 1084 │     Module.create(module, quoted, Macro.Env.location(__ENV__))
+      │     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      │
+      └─ deps/postgrex/lib/postgrex/type_module.ex:1084: MyApp.PostgrexTypes (module)
+```
 
